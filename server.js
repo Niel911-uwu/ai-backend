@@ -12,7 +12,7 @@ app.get("/", (req, res) => {
 
 app.post("/analyze", async (req, res) => {
     try {
-        const { apiKey, payload } = req.body;
+        const { apiKey, url } = req.body;
 
         const response = await fetch("https://api.groq.com/openai/v1/chat/completions", {
             method: "POST",
