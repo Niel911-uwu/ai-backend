@@ -38,7 +38,7 @@ app.post("/analyze", async (req, res) => {
                 "Authorization": "Bearer " + apiKey
             },
             body: JSON.stringify({
-                model: "llama3-70b-8192",
+                model: "llama3-70b-versatile",
                 response_format: { type: "json_object" },
                 messages: [
                     {
